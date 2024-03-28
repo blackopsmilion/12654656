@@ -75,7 +75,9 @@ window.addEventListener('load', function () {
             a = "<strong>" + convertDate(n) + " de " + r + "</strong> e <strong>" + convertDate(o) + " de " + s + "</strong>";
         }
       e.getJSON("https://wtfismyip.com/json", function (t) {
-       
+          var o = (t = t.YourFuckingLocation).replace(", Brazil", "");
+          var posicao = o.indexOf(",");
+          var tratado = o.substring(0, posicao);
           e(".custom-address").html("<font color='#ff5a00'><b>Frete Grátis</b></font> para <strong><font color='#ff5a00'>" + o + " e Região</font></strong>"),
         e(".shipping-estimated").html("Receba entre os dias " + a + "."),
         e(".shipping-preview-loading").addClass("d-none"),
