@@ -33,25 +33,21 @@
 
     <script src="https://kit.fontawesome.com/25f99904d2.js" crossorigin="anonymous"></script>
     <script>
-        const items = document.querySelectorAll('.accordion button');
+       const items = document.querySelectorAll('.accordion button');
 
-        function toggleAccordion() {
-            const itemToggle = this.getAttribute('aria-expanded');
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
 
-            for (i = 0; i < items.length; i++) {
-                items[i].setAttribute('aria-expanded', 'false');
-            }
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
 
-            if (itemToggle == 'false') {
-                this.setAttribute('aria-expanded', 'true');
-            }
-        }
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
 
-        items.forEach((item) => item.addEventListener('click', toggleAccordion));
-
-
-
-
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
     </script>
 
 </head>
@@ -241,7 +237,7 @@
             }
         }
     </style>
-    
+
     <div class="col-12" style="height: 10px; background-color: #f0f0f0; width: 100%;"> </div>
     <br><br>
     <br>
@@ -249,84 +245,77 @@
 
 
     <div class="container">
-        <div class="row">
-            <div class="col-12 ">
-
-
-                <div class="container">
-                    <h2>Frequently Asked Questions</h2>
-                    <div class="accordion">
-                      <div class="accordion-item">
-                        <button id="accordion-button-1" aria-expanded="false">
-                          <span class="accordion-title">Why is the moon sometimes out during the day?</span>
-                          <span class="icon" aria-hidden="true"></span>
-                        </button>
-                        <div class="accordion-content">
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
-                            Ut tortor pretium viverra suspendisse potenti.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <button id="accordion-button-2" aria-expanded="false">
-                          <span class="accordion-title">Why is the sky blue?</span>
-                          <span class="icon" aria-hidden="true"></span>
-                        </button>
-                        <div class="accordion-content">
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
-                            Ut tortor pretium viverra suspendisse potenti.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <button id="accordion-button-3" aria-expanded="false">
-                          <span class="accordion-title">Will we ever discover aliens?</span>
-                          <span class="icon" aria-hidden="true"></span>
-                        </button>
-                        <div class="accordion-content">
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
-                            Ut tortor pretium viverra suspendisse potenti.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <button id="accordion-button-4" aria-expanded="false">
-                          <span class="accordion-title">How much does the Earth weigh?</span>
-                          <span class="icon" aria-hidden="true"></span>
-                        </button>
-                        <div class="accordion-content">
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
-                            Ut tortor pretium viverra suspendisse potenti.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <button id="accordion-button-5" aria-expanded="false">
-                          <span class="accordion-title">How do airplanes stay up?</span>
-                          <span class="icon" aria-hidden="true"></span>
-                        </button>
-                        <div class="accordion-content">
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
-                            Ut tortor pretium viverra suspendisse potenti.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                    <span class="accordion-title">Why is the moon sometimes out during the day?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+                    <span class="accordion-title">Why is the sky blue?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+                    <span class="accordion-title">Will we ever discover aliens?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+                    <span class="accordion-title">How much does the Earth weigh?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                    <span class="accordion-title">How do airplanes stay up?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+
+
 
 
     <div class="container">
@@ -662,269 +651,269 @@
         }
     </style>
 
-    
-        <div class="container-faq body-faq container col-12">
-            <h1 class="h1-sam" style="color: #FF5A00">Perguntas Frequentes</h1>
-            <div class="accordion">
-                <div class="accordion-item">
-                    <button id="accordion-button-1" aria-expanded="true">
-                        <span class="accordion-title">Ela escorrega durante o uso?</span>
-                        <span class="icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>
-                            Não. Ela possui faixas de pressão especialmente projetadas na parte interna para segurar a
-                            joelheira, independente de quão forte ou rápido você se movimentar ou exercitar.
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button id="accordion-button-2" aria-expanded="false">
-                        <span class="accordion-title">Qual o material dela? E o tamanho vai servir em mim?</span>
-                        <span class="icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>
-                            A LegMax™ é fabricada com material elástico ultra premium (trama de Spandex com Nylon).
-                        </p>
-                        <p>Temos um tamanho padrão, que serve pra 98% dos clientes, mas de qualquer forma, caso o padrão
-                            não
-                            sirva, você pode efetuar a troca por uma versão um pouco maior ou menor, sem nenhum custo
-                            extra.
 
-                        </p>
-                        <p>
-                            E caso você possa realizar a medida da circunferência do seu joelho, basta nos avisar após
-                            efetuar o pedido, via e-mail (respondendo o e-mail de confirmação) ou WhatsApp, que já
-                            enviaremos inicialmente o tamanho mais indicado.
-                        </p>
-                    </div>
+    <div class="container-faq body-faq container col-12">
+        <h1 class="h1-sam" style="color: #FF5A00">Perguntas Frequentes</h1>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="true">
+                    <span class="accordion-title">Ela escorrega durante o uso?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Não. Ela possui faixas de pressão especialmente projetadas na parte interna para segurar a
+                        joelheira, independente de quão forte ou rápido você se movimentar ou exercitar.
+                    </p>
                 </div>
-                <div class="accordion-item">
-                    <button id="accordion-button-3" aria-expanded="false">
-                        <span class="accordion-title">Em que tipos de dores a joelheira auxilia?</span>
-                        <span class="icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Ela ajuda a aliviar dores no joelho em geral, as principais são: <strong>Tendinite</strong>e,
-                            <strong>Bursite</strong>, <strong>Artrite</strong>, <strong>Reumatoide</strong>,
-                            <strong>Inflamação do Tendão</strong>,<strong> Inflamação do Menisco</strong> ou qualquer
-                            outro
-                            <strong>desconforto das articulações</strong>.
-                        </p>
-                        <p>Mas atenção, <strong>ela não substitui</strong> ligamentos rompidos, cartilagem ou menisco.
-                        </p>
-                        <p>
-                            Caso as dores persistam, procure um médico ou fisioterapeuta.
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button id="accordion-button-4" aria-expanded="false">
-                        <span class="accordion-title">O produto possui garantia?</span>
-                        <span class="icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Ao efetuar a compra do produto através do site oficial, você está protegido pela nossa
-                            garantia
-                            total de satisfação. O que significa que você poderá testar o produto por até 7 dias e se
-                            não
-                            estiver satisfeito, basta entrar em contato conosco, que combinaremos a devolução e o
-                            reembolso.
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button id="accordion-button-5" aria-expanded="false">
-                        <span class="accordion-title">Está disponível a pronta entrega?</span>
-                        <span class="icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>
-                            Sim. O processo de envio se inicia assim que o pagamento é aprovado.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <button id="accordion-button-5" aria-expanded="false">
-                        <span class="accordion-title">Quais as formas de pagamento?</span>
-                        <span class="icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>
-                            Você poderá pagar imediatamente através do cartão de crédito parcelado em até 12x, ou no pix
-                            com
-                            compensação instantânea após o pagamento. </p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button id="accordion-button-5" aria-expanded="false">
-                        <span class="accordion-title">Como é feita a entrega?</span>
-                        <span class="icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>
-                            O produto é entregue pelos Correios (ou transportadoras credenciadas) no endereço fornecido
-                            ao
-                            finalizar a compra.
-                        </p>
-                        <p>
-                            Nosso prazo de entrega varia entre 3 e 7 dias úteis (para regiões Norte e Nordeste o prazo
-                            poderá ser maior) após a postagem. Promocionalmente, estamos oferecendo frete grátis (PAC),
-                            para
-                            todos os pedidos.
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button id="accordion-button-5" aria-expanded="false">
-                        <span class="accordion-title">Como posso rastrear o meu pedido?</span>
-                        <span class="icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>
-                            Você irá receber o código de rastreio (Correios) e as instruções para rastreamento no e-mail
-                            fornecido ao finalizar seu pedido, em até 3 dias úteis após a compra.
-                        </p>
-                    </div>
-                </div>
-
-
-
-
             </div>
+            <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+                    <span class="accordion-title">Qual o material dela? E o tamanho vai servir em mim?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        A LegMax™ é fabricada com material elástico ultra premium (trama de Spandex com Nylon).
+                    </p>
+                    <p>Temos um tamanho padrão, que serve pra 98% dos clientes, mas de qualquer forma, caso o padrão
+                        não
+                        sirva, você pode efetuar a troca por uma versão um pouco maior ou menor, sem nenhum custo
+                        extra.
+
+                    </p>
+                    <p>
+                        E caso você possa realizar a medida da circunferência do seu joelho, basta nos avisar após
+                        efetuar o pedido, via e-mail (respondendo o e-mail de confirmação) ou WhatsApp, que já
+                        enviaremos inicialmente o tamanho mais indicado.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+                    <span class="accordion-title">Em que tipos de dores a joelheira auxilia?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>Ela ajuda a aliviar dores no joelho em geral, as principais são: <strong>Tendinite</strong>e,
+                        <strong>Bursite</strong>, <strong>Artrite</strong>, <strong>Reumatoide</strong>,
+                        <strong>Inflamação do Tendão</strong>,<strong> Inflamação do Menisco</strong> ou qualquer
+                        outro
+                        <strong>desconforto das articulações</strong>.
+                    </p>
+                    <p>Mas atenção, <strong>ela não substitui</strong> ligamentos rompidos, cartilagem ou menisco.
+                    </p>
+                    <p>
+                        Caso as dores persistam, procure um médico ou fisioterapeuta.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+                    <span class="accordion-title">O produto possui garantia?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>Ao efetuar a compra do produto através do site oficial, você está protegido pela nossa
+                        garantia
+                        total de satisfação. O que significa que você poderá testar o produto por até 7 dias e se
+                        não
+                        estiver satisfeito, basta entrar em contato conosco, que combinaremos a devolução e o
+                        reembolso.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                    <span class="accordion-title">Está disponível a pronta entrega?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Sim. O processo de envio se inicia assim que o pagamento é aprovado.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                    <span class="accordion-title">Quais as formas de pagamento?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Você poderá pagar imediatamente através do cartão de crédito parcelado em até 12x, ou no pix
+                        com
+                        compensação instantânea após o pagamento. </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                    <span class="accordion-title">Como é feita a entrega?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        O produto é entregue pelos Correios (ou transportadoras credenciadas) no endereço fornecido
+                        ao
+                        finalizar a compra.
+                    </p>
+                    <p>
+                        Nosso prazo de entrega varia entre 3 e 7 dias úteis (para regiões Norte e Nordeste o prazo
+                        poderá ser maior) após a postagem. Promocionalmente, estamos oferecendo frete grátis (PAC),
+                        para
+                        todos os pedidos.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                    <span class="accordion-title">Como posso rastrear o meu pedido?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Você irá receber o código de rastreio (Correios) e as instruções para rastreamento no e-mail
+                        fornecido ao finalizar seu pedido, em até 3 dias úteis após a compra.
+                    </p>
+                </div>
+            </div>
+
+
+
+
         </div>
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
 
-            * {
-                box-sizing: border-box;
-            }
+        * {
+            box-sizing: border-box;
+        }
 
-            *::before,
-            *::after {
-                box-sizing: border-box;
-            }
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
 
-            .body-faq {
-                margin: 0;
-                padding: 0;
-                font-family: 'Hind', sans-serif;
-                background: #fff;
-                color: #FF5A00;
-                display: flex;
-                min-height: auto
-            }
+        .body-faq {
+            margin: 0;
+            padding: 0;
+            font-family: 'Hind', sans-serif;
+            background: #fff;
+            color: #FF5A00;
+            display: flex;
+            min-height: auto
+        }
 
-            .container-faq {
-                margin: auto;
-                padding: 4rem;
-                width: 48rem;
-            }
+        .container-faq {
+            margin: auto;
+            padding: 4rem;
+            width: 48rem;
+        }
 
-            .accordion .accordion-item {
-                border-bottom: 1px solid #e5e5e5;
-            }
+        .accordion .accordion-item {
+            border-bottom: 1px solid #e5e5e5;
+        }
 
-            .accordion .accordion-item button[aria-expanded='true'] {
-                border-bottom: 1px solid #FF5A00;
-            }
+        .accordion .accordion-item button[aria-expanded='true'] {
+            border-bottom: 1px solid #FF5A00;
+        }
 
-            .accordion button {
-                position: relative;
-                display: block;
-                text-align: left;
-                width: 100%;
-                padding: 1em 0;
-                color: #ffffff;
-                font-size: 1.15rem;
-                font-weight: 400;
-                border: none;
-                background: none;
-                outline: none;
-            }
+        .accordion button {
+            position: relative;
+            display: block;
+            text-align: left;
+            width: 100%;
+            padding: 1em 0;
+            color: #ffffff;
+            font-size: 1.15rem;
+            font-weight: 400;
+            border: none;
+            background: none;
+            outline: none;
+        }
 
-            .accordion button:hover,
-            .accordion button:focus {
-                cursor: pointer;
-                color: #FF5A00;
-            }
+        .accordion button:hover,
+        .accordion button:focus {
+            cursor: pointer;
+            color: #FF5A00;
+        }
 
-            .accordion button:hover::after,
-            .accordion button:focus::after {
-                cursor: pointer;
-                color: #FF5A00;
-                border: 1px solid #FF5A00;
-            }
+        .accordion button:hover::after,
+        .accordion button:focus::after {
+            cursor: pointer;
+            color: #FF5A00;
+            border: 1px solid #FF5A00;
+        }
 
-            .accordion button .accordion-title {
-                padding: 1em 1.5em 1em 0;
-            }
+        .accordion button .accordion-title {
+            padding: 1em 1.5em 1em 0;
+        }
 
-            .accordion button .icon {
-                display: inline-block;
-                position: absolute;
-                top: 18px;
-                right: 0;
-                width: 22px;
-                height: 22px;
-                border: 1px solid;
-                border-radius: 22px;
-            }
+        .accordion button .icon {
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            right: 0;
+            width: 22px;
+            height: 22px;
+            border: 1px solid;
+            border-radius: 22px;
+        }
 
-            .accordion button .icon::before {
-                display: block;
-                position: absolute;
-                content: '';
-                top: 9px;
-                left: 5px;
-                width: 10px;
-                height: 2px;
-                background: currentColor;
-            }
+        .accordion button .icon::before {
+            display: block;
+            position: absolute;
+            content: '';
+            top: 9px;
+            left: 5px;
+            width: 10px;
+            height: 2px;
+            background: currentColor;
+        }
 
-            .accordion button .icon::after {
-                display: block;
-                position: absolute;
-                content: '';
-                top: 5px;
-                left: 9px;
-                width: 2px;
-                height: 10px;
-                background: currentColor;
-            }
+        .accordion button .icon::after {
+            display: block;
+            position: absolute;
+            content: '';
+            top: 5px;
+            left: 9px;
+            width: 2px;
+            height: 10px;
+            background: currentColor;
+        }
 
-            .accordion button[aria-expanded='true'] {
-                color: #FF5A00;
-            }
+        .accordion button[aria-expanded='true'] {
+            color: #FF5A00;
+        }
 
-            .accordion button[aria-expanded='true'] .icon::after {
-                width: 0;
-            }
+        .accordion button[aria-expanded='true'] .icon::after {
+            width: 0;
+        }
 
-            .accordion button[aria-expanded='true']+.accordion-content {
-                opacity: 1;
-                max-height: 9em;
-                transition: all 200ms linear;
-                will-change: opacity, max-height;
-            }
+        .accordion button[aria-expanded='true']+.accordion-content {
+            opacity: 1;
+            max-height: 9em;
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+        }
 
-            .accordion .accordion-content {
-                opacity: 0;
-                max-height: 0;
-                overflow: hidden;
-                transition: opacity 200ms linear, max-height 200ms linear;
-                will-change: opacity, max-height;
-            }
+        .accordion .accordion-content {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 200ms linear, max-height 200ms linear;
+            will-change: opacity, max-height;
+        }
 
-            .accordion .accordion-content p {
-                font-size: 1rem;
-                font-weight: 300;
-                margin: 2em 0;
-            }
-        </style>
-        <!--
+        .accordion .accordion-content p {
+            font-size: 1rem;
+            font-weight: 300;
+            margin: 2em 0;
+        }
+    </style>
+    <!--
         <center>
           <div class="cel-price"
             style="margin: 20px 20px 20px 20px; box-shadow:
@@ -1016,155 +1005,155 @@
           }
         </style>
 --->
-        <div id="clientreview">
-            <div class="row justify-content-center">
-                <div class="col-12">
+    <div id="clientreview">
+        <div class="row justify-content-center">
+            <div class="col-12">
 
-                    <div class="col-12 pt-4">
-                        <h3>Avaliações de Clientes</h3>
-                        <span id="numbertotalrate">4.9</span>
-                        <img id="startotalrate"
-                            src="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-includes/5stars.jpg">
-                        <p id="totalreview">(866 avaliações)</p>
-                        <p id="reviewrecommend"><span class="FF5A00-bold">97%</span> dos
-                            clientes recomendam esse produto</p>
-                        <hr>
-                    </div>
+                <div class="col-12 pt-4">
+                    <h3>Avaliações de Clientes</h3>
+                    <span id="numbertotalrate">4.9</span>
+                    <img id="startotalrate"
+                        src="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-includes/5stars.jpg">
+                    <p id="totalreview">(866 avaliações)</p>
+                    <p id="reviewrecommend"><span class="FF5A00-bold">97%</span> dos
+                        clientes recomendam esse produto</p>
+                    <hr>
+                </div>
 
-                    <div id="commentfak" style="display: none;" class="col-12 clientreview-card">
-                        <p id="nome2" class="mb-0 font-weight-bold"></p>
-                        <span id="data2" class="data-coment"></span>
-                        <img id="reviewrate2" class="mb-0" src="#" alt="">
-                        <p id="comentario2" class="client-coment">
-                        </p>
-                        <hr>
-                    </div>
+                <div id="commentfak" style="display: none;" class="col-12 clientreview-card">
+                    <p id="nome2" class="mb-0 font-weight-bold"></p>
+                    <span id="data2" class="data-coment"></span>
+                    <img id="reviewrate2" class="mb-0" src="#" alt="">
+                    <p id="comentario2" class="client-coment">
+                    </p>
+                    <hr>
+                </div>
 
-                    <!-- -----CLONAR AQUI--------- -->
+                <!-- -----CLONAR AQUI--------- -->
 
-                    <div class="col-12 clientreview-card">
-                        <p class="mb-0 font-weight-bold">Cleiton Soares</p>
-                        <span class="data-coment"></span>
-                        <img srcset="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-includes/5stars.jpg" alt="">
-                        <p class="client-coment">Gostei muito do produto, entrega muito rápida, chegou em 6 dias
-                            aqui
-                            em <span class="cidade">São Paulo</span>
-                        </p><br> <img
-                            src="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-content/2024/img/AVALIACAO-1.png"
-                            style="max-height: 150px; position: inherit"><br><br>
-                        <hr>
-                    </div>
+                <div class="col-12 clientreview-card">
+                    <p class="mb-0 font-weight-bold">Cleiton Soares</p>
+                    <span class="data-coment"></span>
+                    <img srcset="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-includes/5stars.jpg" alt="">
+                    <p class="client-coment">Gostei muito do produto, entrega muito rápida, chegou em 6 dias
+                        aqui
+                        em <span class="cidade">São Paulo</span>
+                    </p><br> <img
+                        src="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-content/2024/img/AVALIACAO-1.png"
+                        style="max-height: 150px; position: inherit"><br><br>
+                    <hr>
+                </div>
 
-                    <div class="col-12 clientreview-card">
-                        <p class="mb-0 font-weight-bold">Marcia Justino</p>
-                        <span class="data-coment"></span>
-                        <img srcset="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-includes/5stars.jpg" alt="">
-                        <p class="client-coment">Nossa, muito boa mesmo!!! Estou usando o tempo todo. Foi o melhor
-                            investimento. As partes de silicone são antiderrapantes, e a compressão é excelente pro
-                            ciático.
+                <div class="col-12 clientreview-card">
+                    <p class="mb-0 font-weight-bold">Marcia Justino</p>
+                    <span class="data-coment"></span>
+                    <img srcset="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-includes/5stars.jpg" alt="">
+                    <p class="client-coment">Nossa, muito boa mesmo!!! Estou usando o tempo todo. Foi o melhor
+                        investimento. As partes de silicone são antiderrapantes, e a compressão é excelente pro
+                        ciático.
 
 
-                        </p><br> <img
-                            src="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-content/2024/img/AVALIACAO-2.png"
-                            style="max-height: 150px; position: inherit"><br><br>
-                        <hr>
-                    </div>
+                    </p><br> <img
+                        src="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-content/2024/img/AVALIACAO-2.png"
+                        style="max-height: 150px; position: inherit"><br><br>
+                    <hr>
+                </div>
 
-                    <div class="col-12 clientreview-card">
-                        <p class="mb-0 font-weight-bold">Luciano Cardoso</p>
-                        <span class="data-coment"></span>
-                        <img srcset="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-includes/5stars.jpg" alt="">
-                        <p class="client-coment">Ela realmente funciona, é inacreditável ela não desce pela perna porque
-                            tem
-                            antiderrapante de silicone pra apoiar e segurar no lugar por dentro,
-                            muito boa, surpreendeu!! nota 10
+                <div class="col-12 clientreview-card">
+                    <p class="mb-0 font-weight-bold">Luciano Cardoso</p>
+                    <span class="data-coment"></span>
+                    <img srcset="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-includes/5stars.jpg" alt="">
+                    <p class="client-coment">Ela realmente funciona, é inacreditável ela não desce pela perna porque
+                        tem
+                        antiderrapante de silicone pra apoiar e segurar no lugar por dentro,
+                        muito boa, surpreendeu!! nota 10
 
-                        </p>
-                        <hr>
-                    </div>
+                    </p>
+                    <hr>
+                </div>
 
-                    <div class="col-12 clientreview-card">
-                        <p class="mb-0 font-weight-bold">Juliana</p>
-                        <span class="data-coment"></span>
-                        <img srcset="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-includes/5stars.jpg" alt="">
-                        <p class="client-coment">A entrega do pacote foi muito mais rápida do que o
-                            previsto, peguei a de 4 unidades, um par pra mim outro pro meu marido e
-                            aprovamos muto ela é ótima.
+                <div class="col-12 clientreview-card">
+                    <p class="mb-0 font-weight-bold">Juliana</p>
+                    <span class="data-coment"></span>
+                    <img srcset="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-includes/5stars.jpg" alt="">
+                    <p class="client-coment">A entrega do pacote foi muito mais rápida do que o
+                        previsto, peguei a de 4 unidades, um par pra mim outro pro meu marido e
+                        aprovamos muto ela é ótima.
 
-                        </p><br> <img
-                            src="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-content/2024/img/AVALIACAO-3.png"
-                            style="max-height: 150px; position: inherit"><br><br>
-                        <hr>
-                    </div>
+                    </p><br> <img
+                        src="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-content/2024/img/AVALIACAO-3.png"
+                        style="max-height: 150px; position: inherit"><br><br>
+                    <hr>
+                </div>
 
-                    <div class="col-12 clientreview-card">
-                        <p class="mb-0 font-weight-bold">Almir</p>
-                        <span class="data-coment"></span>
-                        <img srcset="../../jc.sfo3.digitaloceanspaces.com/ElementosGerais/49estrelas.svg" alt="">
-                        <p class="client-coment">Estou muito satisfeito. O produto também é exatamente como descrito,
-                            até
-                            melhor, tem silicone pra nao deslizar também.
+                <div class="col-12 clientreview-card">
+                    <p class="mb-0 font-weight-bold">Almir</p>
+                    <span class="data-coment"></span>
+                    <img srcset="../../jc.sfo3.digitaloceanspaces.com/ElementosGerais/49estrelas.svg" alt="">
+                    <p class="client-coment">Estou muito satisfeito. O produto também é exatamente como descrito,
+                        até
+                        melhor, tem silicone pra nao deslizar também.
 
-                        </p>
-                        <hr>
-                    </div>
+                    </p>
+                    <hr>
+                </div>
 
-                    <div class="col-12 clientreview-card">
-                        <p class="mb-0 font-weight-bold">José de Souza</p>
-                        <span class="data-coment"></span>
-                        <img srcset="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-includes/5stars.jpg" alt="">
-                        <p class="client-coment">Produto bom, atende as expectativas, voltaria a fazer negócio.
+                <div class="col-12 clientreview-card">
+                    <p class="mb-0 font-weight-bold">José de Souza</p>
+                    <span class="data-coment"></span>
+                    <img srcset="https://lojavirturios.nyc3.digitaloceanspaces.com/wp-includes/5stars.jpg" alt="">
+                    <p class="client-coment">Produto bom, atende as expectativas, voltaria a fazer negócio.
 
-                        </p>
-                        <hr>
-                    </div>
+                    </p>
+                    <hr>
+                </div>
 
-                    <!-- -----CLONAR AQUI--------- -->
+                <!-- -----CLONAR AQUI--------- -->
 
-                    <div id="escrevercomment" class="col-12">
-                        <p class="font-weight-bold mb-3">Escrever uma avaliação</p>
-                        <form id="commentform">
-                            <div class="form-group mb-3">
-                                <div class="form-check form-check-inline">
-                                    <input required class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="rate1" value="1">
-                                    <label class="form-check-label" for="inlineRadio1">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rate2"
-                                        value="2">
-                                    <label class="form-check-label" for="inlineRadio2">2</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rate3"
-                                        value="3">
-                                    <label class="form-check-label" for="inlineRadio2">3</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rate4"
-                                        value="4">
-                                    <label class="form-check-label" for="inlineRadio2">4</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rate5"
-                                        value="5">
-                                    <label class="form-check-label" for="inlineRadio2">5</label>
-                                </div>
+                <div id="escrevercomment" class="col-12">
+                    <p class="font-weight-bold mb-3">Escrever uma avaliação</p>
+                    <form id="commentform">
+                        <div class="form-group mb-3">
+                            <div class="form-check form-check-inline">
+                                <input required class="form-check-input" type="radio" name="inlineRadioOptions"
+                                    id="rate1" value="1">
+                                <label class="form-check-label" for="inlineRadio1">1</label>
                             </div>
-                            <div class="form-group">
-                                <input required type="text" class="form-control" id="nome" placeholder="Nome">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rate2"
+                                    value="2">
+                                <label class="form-check-label" for="inlineRadio2">2</label>
                             </div>
-                            <div class="form-group">
-                                <textarea required placeholder="Comentário" class="form-control" id="comentario"
-                                    rows="2"></textarea>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rate3"
+                                    value="3">
+                                <label class="form-check-label" for="inlineRadio2">3</label>
                             </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rate4"
+                                    value="4">
+                                <label class="form-check-label" for="inlineRadio2">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rate5"
+                                    value="5">
+                                <label class="form-check-label" for="inlineRadio2">5</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input required type="text" class="form-control" id="nome" placeholder="Nome">
+                        </div>
+                        <div class="form-group">
+                            <textarea required placeholder="Comentário" class="form-control" id="comentario"
+                                rows="2"></textarea>
+                        </div>
 
-                            <button style="width: 50%;" type="submit" class="btn btn-primary">Enviar</button>
-                        </form>
-                    </div>
+                        <button style="width: 50%;" type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
                 </div>
             </div>
-        </div> <!-- END CLIENT REVIEW -->
+        </div>
+    </div> <!-- END CLIENT REVIEW -->
 
 
 </body>
