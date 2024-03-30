@@ -18,47 +18,47 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
         rel="stylesheet">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="paginadevendas.js"></script>
-  <script>
-    require('initialize');
-  </script>
-  <link rel="preconnect" href="https://fonts.gstatic.com/">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
-    rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="paginadevendas.js"></script>
+    <script>
+        require('initialize');
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="https://kit.fontawesome.com/25f99904d2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/25f99904d2.js" crossorigin="anonymous"></script><script>
+        const items = document.querySelectorAll('.accordion button');
+
+        function toggleAccordion() {
+            const itemToggle = this.getAttribute('aria-expanded');
+
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute('aria-expanded', 'false');
+            }
+
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+
+
+
+    </script>
+
 </head>
 
 <body style="">
 
 
-<script>
-    const items = document.querySelectorAll('.accordion button');
-
-function toggleAccordion() {
-  const itemToggle = this.getAttribute('aria-expanded');
-
-  for (i = 0; i < items.length; i++) {
-    items[i].setAttribute('aria-expanded', 'false');
-  }
-
-  if (itemToggle == 'false') {
-    this.setAttribute('aria-expanded', 'true');
-  }
-}
-
-items.forEach((item) => item.addEventListener('click', toggleAccordion));
-
-
-
-
-</script>
-
+    
 
 
     <div class="headerdesconto">
@@ -366,9 +366,9 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
                     <br>
                     <p class="p-sam"><b> <strong>Pacote possui uma unidade.</strong></b></p>
                     <p class="p-sam"><em> Para a compra do par, é necessário comprar duas unidades.</em></p>
-                     <h1 class="h1-sam">
-            O desconto acaba em <span id="time"></span> minutos.
-          </h1>
+                    <h1 class="h1-sam">
+                        O desconto acaba em <span id="time"></span> minutos.
+                    </h1>
                 </center>
                 <center><a href="https://seguro.lojavirturios.com/r/45G5833D8B">
                         <div class="pc-price"
@@ -443,140 +443,158 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
     </div>
     </center>
 
-  <script>
-    function startTimer(display) {
-      var date = new Date();
-      var h17 = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 17);
-      if (date.getHours() >= 17) {
-        h17.setDate(h17.getDate() + 1);
-      }
-      h17 = h17.getTime();
-      var diff,
-        hours,
-        minutes,
-        seconds;
+    <script>
+        function startTimer(display) {
+            var date = new Date();
+            var h17 = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 17);
+            if (date.getHours() >= 17) {
+                h17.setDate(h17.getDate() + 1);
+            }
+            h17 = h17.getTime();
+            var diff,
+                hours,
+                minutes,
+                seconds;
 
-      function timer() {
-        diff = (((h17 - Date.now()) / 1000) | 0);
+            function timer() {
+                diff = (((h17 - Date.now()) / 1000) | 0);
 
-        // Setting and displaying hours, minutes, seconds
-        hours = (diff / 0) | 0;
-        minutes = ((diff % 1000) / 60) | 0;
-        seconds = (diff % 60) | 0;
+                // Setting and displaying hours, minutes, seconds
+                hours = (diff / 0) | 0;
+                minutes = ((diff % 1000) / 60) | 0;
+                seconds = (diff % 60) | 0;
 
-        hours = hours < 10 ? "0" + hours : hours;
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        display.textContent = hours + ":" + minutes + ":" + seconds;
-      };
-      timer();
-      setInterval(timer, 1000);
-    }
-    window.onload = function () {
-      var timeLeft = 3600 * 17,
-        display = document.querySelector('#time');
-      startTimer(display);
-    };
-  </script>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 ">
-        <center>
-          <img width="80%" src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-includes/entrega.png">
+                display.textContent = hours + ":" + minutes + ":" + seconds;
+            };
+            timer();
+            setInterval(timer, 1000);
+        }
+        window.onload = function () {
+            var timeLeft = 3600 * 17,
+                display = document.querySelector('#time');
+            startTimer(display);
+        };
+    </script>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+                <center>
+                    <img width="80%"
+                        src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-includes/entrega.png">
 
 
-        </center>
+                </center>
 
-      </div>
-    </div>
-  </div>
-
-  <div class="container" style="background-color: #ffffff;">
-    <div class="row">
-      <div class="col-12 "><br>
-        <center><h1 class="h1-sam">O que dizem nossos clientes</h1>
-<br>
-
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img width="80%" src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-cicera.jpg.jpg"></div>
-            <div class="swiper-slide"><img width="80%" src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-flavio.jpg.jpg"></div>
-            <div class="swiper-slide"><img width="80%" src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-jose.jpg.jpg"></div>
-            <div class="swiper-slide"><img width="80%" src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-jorge.jpg.jpg"></div>
-            <div class="swiper-slide"><img width="80%" src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-marcos.jpg.jpg"></div>
-            <div class="swiper-slide"><img width="80%" src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-maria.jpg.jpg"></div>
-            <div class="swiper-slide"><img width="80%" src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-sidney.jpg.jpg"></div>
-            <div class="swiper-slide"><img width="80%" src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-teucle.jpg.jpg"></div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+            </div>
         </div>
-  
-      </center>
-
     </div>
-  </div>
-</div>
- 
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-  <!-- Demo styles -->
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
+    <div class="container" style="background-color: #ffffff;">
+        <div class="row">
+            <div class="col-12 "><br>
+                <center>
+                    <h1 class="h1-sam">O que dizem nossos clientes</h1>
+                    <br>
 
-    body {
-      background: #ffffff;
-      
-    }
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img width="80%"
+                                    src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-cicera.jpg.jpg">
+                            </div>
+                            <div class="swiper-slide"><img width="80%"
+                                    src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-flavio.jpg.jpg">
+                            </div>
+                            <div class="swiper-slide"><img width="80%"
+                                    src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-jose.jpg.jpg">
+                            </div>
+                            <div class="swiper-slide"><img width="80%"
+                                    src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-jorge.jpg.jpg">
+                            </div>
+                            <div class="swiper-slide"><img width="80%"
+                                    src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-marcos.jpg.jpg">
+                            </div>
+                            <div class="swiper-slide"><img width="80%"
+                                    src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-maria.jpg.jpg">
+                            </div>
+                            <div class="swiper-slide"><img width="80%"
+                                    src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-sidney.jpg.jpg">
+                            </div>
+                            <div class="swiper-slide"><img width="80%"
+                                    src="https://lojavirturios.nyc3.cdn.digitaloceanspaces.com/wp-content/2022/dep-teucle.jpg.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
 
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
+                </center>
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+            </div>
+        </div>
+    </div>
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
 
-    
-    <div class="container-faq col-12 col-md-6">
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #ffffff;
+
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+
+    <div class="container-faq col-12 col-md-6 body-faq">
         <h1 class="h1-sam" style="color: #FF5A00">Perguntas Frequentes</h1>
         <div class="accordion">
             <div class="accordion-item">
@@ -586,7 +604,8 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
                 </button>
                 <div class="accordion-content">
                     <p>
-                        Não. Ela possui faixas de pressão especialmente projetadas na parte interna para segurar a joelheira, independente de quão forte ou rápido você se movimentar ou exercitar.
+                        Não. Ela possui faixas de pressão especialmente projetadas na parte interna para segurar a
+                        joelheira, independente de quão forte ou rápido você se movimentar ou exercitar.
                     </p>
                 </div>
             </div>
@@ -599,11 +618,14 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
                     <p>
                         A LegMax™ é fabricada com material elástico ultra premium (trama de Spandex com Nylon).
                     </p>
-                    <p>Temos um tamanho padrão, que serve pra 98% dos clientes, mas de qualquer forma, caso o padrão não sirva, você pode efetuar a troca por uma versão um pouco maior ou menor, sem nenhum custo extra.
-                        
+                    <p>Temos um tamanho padrão, que serve pra 98% dos clientes, mas de qualquer forma, caso o padrão não
+                        sirva, você pode efetuar a troca por uma versão um pouco maior ou menor, sem nenhum custo extra.
+
                     </p>
                     <p>
-                        E caso você possa realizar a medida da circunferência do seu joelho, basta nos avisar após efetuar o pedido, via e-mail (respondendo o e-mail de confirmação) ou WhatsApp, que já enviaremos inicialmente o tamanho mais indicado.
+                        E caso você possa realizar a medida da circunferência do seu joelho, basta nos avisar após
+                        efetuar o pedido, via e-mail (respondendo o e-mail de confirmação) ou WhatsApp, que já
+                        enviaremos inicialmente o tamanho mais indicado.
                     </p>
                 </div>
             </div>
@@ -613,8 +635,12 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
                     <span class="icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion-content">
-                 <p>Ela ajuda a aliviar dores no joelho em geral, as principais são: <strong>Tendinite</strong>e, <strong>Bursite</strong>, <strong>Artrite</strong>, <strong>Reumatoide</strong>, <strong>Inflamação do Tendão</strong>,<strong> Inflamação do Menisco</strong> ou qualquer outro <strong>desconforto das articulações</strong>.</p>
-                   <p>Mas atenção, <strong>ela não substitui</strong> ligamentos rompidos, cartilagem ou menisco.</p> <p>
+                    <p>Ela ajuda a aliviar dores no joelho em geral, as principais são: <strong>Tendinite</strong>e,
+                        <strong>Bursite</strong>, <strong>Artrite</strong>, <strong>Reumatoide</strong>,
+                        <strong>Inflamação do Tendão</strong>,<strong> Inflamação do Menisco</strong> ou qualquer outro
+                        <strong>desconforto das articulações</strong>.</p>
+                    <p>Mas atenção, <strong>ela não substitui</strong> ligamentos rompidos, cartilagem ou menisco.</p>
+                    <p>
                         Caso as dores persistam, procure um médico ou fisioterapeuta.
                     </p>
                 </div>
@@ -625,7 +651,10 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
                     <span class="icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion-content">
-                   <p>Ao efetuar a compra do produto através do site oficial, você está protegido pela nossa garantia total de satisfação. O que significa que você poderá testar o produto por até 7 dias e se não estiver satisfeito, basta entrar em contato conosco, que combinaremos a devolução e o reembolso.</p>
+                    <p>Ao efetuar a compra do produto através do site oficial, você está protegido pela nossa garantia
+                        total de satisfação. O que significa que você poderá testar o produto por até 7 dias e se não
+                        estiver satisfeito, basta entrar em contato conosco, que combinaremos a devolução e o reembolso.
+                    </p>
                 </div>
             </div>
             <div class="accordion-item">
@@ -640,47 +669,56 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
                 </div>
             </div>
 
-  <div class="accordion-item">
+            <div class="accordion-item">
                 <button id="accordion-button-5" aria-expanded="false">
                     <span class="accordion-title">Quais as formas de pagamento?</span>
                     <span class="icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion-content">
                     <p>
-Você poderá pagar imediatamente através do cartão de crédito parcelado em até 12x, ou no pix com compensação instantânea após o pagamento.                    </p>
+                        Você poderá pagar imediatamente através do cartão de crédito parcelado em até 12x, ou no pix com
+                        compensação instantânea após o pagamento. </p>
                 </div>
-            </div>  <div class="accordion-item">
+            </div>
+            <div class="accordion-item">
                 <button id="accordion-button-5" aria-expanded="false">
                     <span class="accordion-title">Como é feita a entrega?</span>
                     <span class="icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion-content">
                     <p>
-                       O produto é entregue pelos Correios (ou transportadoras credenciadas) no endereço fornecido ao finalizar a compra.
+                        O produto é entregue pelos Correios (ou transportadoras credenciadas) no endereço fornecido ao
+                        finalizar a compra.
                     </p>
                     <p>
-                        Nosso prazo de entrega varia entre 3 e 7 dias úteis (para regiões Norte e Nordeste o prazo poderá ser maior) após a postagem. Promocionalmente, estamos oferecendo frete grátis (PAC), para todos os pedidos.
+                        Nosso prazo de entrega varia entre 3 e 7 dias úteis (para regiões Norte e Nordeste o prazo
+                        poderá ser maior) após a postagem. Promocionalmente, estamos oferecendo frete grátis (PAC), para
+                        todos os pedidos.
                     </p>
                 </div>
-            </div>  <div class="accordion-item">
+            </div>
+            <div class="accordion-item">
                 <button id="accordion-button-5" aria-expanded="false">
                     <span class="accordion-title">Como posso rastrear o meu pedido?</span>
                     <span class="icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion-content">
                     <p>
-                        Você irá receber o código de rastreio (Correios) e as instruções para rastreamento no e-mail fornecido ao finalizar seu pedido, em até 3 dias úteis após a compra.
+                        Você irá receber o código de rastreio (Correios) e as instruções para rastreamento no e-mail
+                        fornecido ao finalizar seu pedido, em até 3 dias úteis após a compra.
                     </p>
                 </div>
             </div>
 
 
 
-            
+
         </div>
     </div>
     <style>
-        * {
+       @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+* {
   box-sizing: border-box;
 }
 *::before,
@@ -688,15 +726,24 @@ Você poderá pagar imediatamente através do cartão de crédito parcelado em a
   box-sizing: border-box;
 }
 
+.body-faq {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: #FF5A00;
+  display: flex;
+  min-height: 100vh;
+}
 
 .container-faq {
   margin: 0 auto;
-  padding: 4px;
-  width: 100%;
+  padding: 4rem;
+  width: 48rem;
 }
 
 .accordion .accordion-item {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .accordion .accordion-item button[aria-expanded='true'] {
@@ -709,7 +756,7 @@ Você poderá pagar imediatamente através do cartão de crédito parcelado em a
   text-align: left;
   width: 100%;
   padding: 1em 0;
-  color: #FF5A00;
+  color: #ffffff;
   font-size: 1.15rem;
   font-weight: 400;
   border: none;
@@ -790,6 +837,9 @@ Você poderá pagar imediatamente através do cartão de crédito parcelado em a
   font-weight: 300;
   margin: 2em 0;
 }
+
+
+
 
     </style>
     <!--
