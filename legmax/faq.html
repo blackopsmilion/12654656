@@ -37,7 +37,27 @@
 <body style="">
 
 
+<script>
+    const items = document.querySelectorAll('.accordion button');
 
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+
+
+
+</script>
 
 
 
@@ -671,8 +691,8 @@ Você poderá pagar imediatamente através do cartão de crédito parcelado em a
 
 .container-faq {
   margin: 0 auto;
-  padding: 4rem;
-  width: 60rem;
+  padding: 4px;
+  width: 100%;
 }
 
 .accordion .accordion-item {
